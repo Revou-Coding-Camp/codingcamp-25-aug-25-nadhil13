@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Anak Bangsa Kreatif</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ABK</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1 id="welcome-message">Hi User, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertamamu di dunia digital!</p>
+            <div class="banner-image">
+                <img src="2.png" alt="Main Banner">
+            </div>
+        </section>
+
+        <section class="headquarters-section">
+            <h2>Our Headquarter</h2>
+            <div class="hq-locations">
+                <div class="location-item">
+                    <div class="circle"></div>
+                    <p>Jakarta</p>
+                </div>
+                <div class="location-item">
+                    <div class="circle"></div>
+                    <p>Bandung</p>
+                </div>
+                <div class="location-item">
+                    <div class="circle"></div>
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us" class="message-us-section">
+            <h2>Message Us</h2>
+            <div class="form-container">
+                <form id="message-form">
+                    <label for="full-name">Nama:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="birth-date">Tanggal Lahir:</label>
+                    <input type="date" id="birth-date" name="birth-date" required>
+
+                    <label>Jenis Kelamin:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="Laki-laki" required>
+                        <label for="male">Laki-laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan">
+                        <label for="female">Perempuan</label>
+                    </div>
+
+                    <label for="messages">Pesan:</label>
+                    <textarea id="messages" name="messages" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div class="form-output">
+                    <p><strong>Current time :</strong> <span id="current-time"></span></p>
+                    <p><strong>Nama :</strong> <span id="output-name"></span></p>
+                    <p><strong>Tanggal Lahir :</strong> <span id="output-birth-date"></span></p>
+                    <p><strong>Jenis Kelamin :</strong> <span id="output-gender"></span></p>
+                    <p><strong>Pesan :</strong> <span id="output-messages"></span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Muhammad Nadhil Arsy Al-Wafi</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
